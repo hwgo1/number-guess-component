@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;600&family=Manrope:wght@400;700&family=Space+Mono:wght@700&display=swap");
+
+:root {
+  --blue-bg: #3c6fff;
+  --white: #ffffff;
+  --gray-shadow: #202020;
+  --gray-text: #303030;
+  --gray-button: #adaeae;
+  --light-gray-text: #565b70;
+  --light-red: #ffcbcb;
+  --error-red: #ff3e3e;
+  --light-green: #b9ffd5;
+  --success-green: #05c451;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
+}
+
+body {
+  background: var(--blue-bg);
+}
+
+main {
+  width: min(90%, 31.25em);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background: var(--white);
+  padding: 4em 2em;
+  border-radius: 0.5em;
+  box-shadow: -1.5em -1.5em var(--gray-shadow);
+  text-align: center;
+}
+
+main h3 {
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 2em;
+  color: var(--gray-text);
+}
+
+.input-wrapper {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 1em;
+  margin: 3em auto 1.5em auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 1em;
+  font-size: 1.2em;
+  text-align: center;
+  border: 2px solid var(--gray-button);
+  border-radius: 0.3em;
+}
+
+button {
+  font-size: 1em;
+  background-color: var(--blue-bg);
+  color: var(--white);
+  border: none;
+  outline: none;
+  border-radius: 0.5em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#check-btn {
+  transition: background-color 0.2s;
+}
+
+#check-btn:hover {
+  background-color: #3c42ff;
+}
+
+#restart {
+  margin: 0 auto 0 auto;
+  padding: 0.8em 1em;
+  display: none;
+}
+
+.result {
+  margin-top: 1em;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--light-gray-text);
+  word-break: break-all;
+}
+
+.error,
+.success {
+  padding: 0.5em 0;
+  border-radius: 0.3em;
+  margin-bottom: 1em;
+  animation: pop 0.4s forwards;
+  transform: scale(0);
+}
+
+.error {
+  background-color: var(--light-red);
+  color: var(--error-red);
+}
+
+.success {
+  background-color: var(--light-green);
+  color: var(--success-green);
+}
+
+
+@keyframes pop {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
