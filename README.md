@@ -5,7 +5,7 @@
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
 </div>
 
-[![Jogo]('img/numeridle.png')]
+[![Game](img/numeridle.png)]
 
 ## Visão Geral
 
@@ -32,7 +32,7 @@ Bem-vindo ao Numeridle, um projeto simples e divertido que demonstra minhas habi
 
 ## Instruções de Desenvolvimento
 
-1. Clone este repositório: `git clone https://github.com/seu-usuario/nome-do-repositorio.git`
+1. Clone este repositório: `git clone https://github.com/hwgo1/number-guess-component.git`
 2. Abra o arquivo `index.html` no seu navegador.
 
 ## Demonstração Online
