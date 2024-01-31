@@ -5,7 +5,7 @@
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
 </div>
 
-[![Game](img/numeridle.png)]
+![Game](img/numeridle.png)
 
 ## Visão Geral
 
@@ -37,5 +37,5 @@ Bem-vindo ao Numeridle, um projeto simples e divertido que demonstra minhas habi
 
 ## Demonstração Online
 
-Uma versão online do jogo está disponível em [link-do-jogo](https://sua-url.com).
+Uma versão online do jogo está disponível em [link-do-jogo](https://hwgo1.github.io/number-guess-component/).
 
