@@ -1,34 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- Document type and language -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Character encoding and viewport configuration -->
     <title>numeridle</title>
-
+    <!-- Webpage title -->
     <link rel="stylesheet" href="style.css" />
+    <!-- External stylesheet for styling -->
     <script defer src="app.js"></script>
+    <!-- External JavaScript file with defer attribute -->
   </head>
   <body>
     <main>
+      <!-- Main content -->
       <div id="game">
+        <!-- Game content container -->
         <h3>
           Eu estou pensando em um número de 1 a 100. <br />
           Você consegue advinhar?
         </h3>
+        <!-- Game instructions -->
 
         <div class="input-wrapper">
+          <!-- Input and button container -->
           <input type="number" placeholder="00" id="guess" />
+          <!-- Input field for user's guess -->
           <button id="check-btn">Chutar</button>
+          <!-- Button to submit guess -->
         </div>
 
         <p id="no-of-guesses">Número de tentativas: 0</p>
+        <!-- Display number of attempts -->
         <p id="guessed-nums">Números chutados: N/A</p>
+        <!-- Display guessed numbers -->
+
       </div>
+      <!-- End of game container -->
+
       <button id="restart">Restart</button>
+      <!-- Restart button -->
+      
       <div class="result">
+        <!-- Result container -->
         <div id="hint"></div>
-        
+        <!-- Display hints or results here -->
+
       </div>
     </main>
+    <!-- End of main content -->
   </body>
 </html>
+<!-- End of HTML document -->

@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;600&family=Manrope:wght@400;700&family=Space+Mono:wght@700&display=swap");
+/* Importing Google Fonts for the project */
 
 :root {
+  /* Root variables for color definitions */
   --blue-bg: #3c6fff;
   --white: #ffffff;
   --gray-shadow: #202020;
@@ -14,6 +16,7 @@
 }
 
 * {
+  /* Global styles for all elements */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -21,10 +24,12 @@
 }
 
 body {
+  /* Body styles */
   background: var(--blue-bg);
 }
 
 main {
+  /* Main content container styles */
   width: min(90%, 31.25em);
   position: absolute;
   transform: translate(-50%, -50%);
@@ -38,6 +43,7 @@ main {
 }
 
 main h3 {
+  /* Styles for heading within main content */
   font-size: 1.2em;
   font-weight: 500;
   line-height: 2em;
@@ -45,6 +51,7 @@ main h3 {
 }
 
 .input-wrapper {
+  /* Styles for input and button container */
   width: 70%;
   display: grid;
   grid-template-columns: 2fr 3fr;
@@ -54,11 +61,13 @@ main h3 {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
+  /* Styles for removing spin buttons on number input */
   -webkit-appearance: none;
   margin: 0;
 }
 
 input[type="number"] {
+  /* Styles for number input */
   width: 100%;
   padding: 1em;
   font-size: 1.2em;
@@ -68,6 +77,7 @@ input[type="number"] {
 }
 
 button {
+  /* Styles for generic button */
   font-size: 1em;
   background-color: var(--blue-bg);
   color: var(--white);
@@ -79,6 +89,7 @@ button {
 }
 
 #check-btn {
+  /* Styles for specific 'check' button and its hover effect */
   transition: background-color 0.2s;
 }
 
@@ -87,16 +98,19 @@ button {
 }
 
 #restart {
+  /* Styles for restart button */
   margin: 0 auto 0 auto;
   padding: 0.8em 1em;
   display: none;
 }
 
 .result {
+  /* Styles for result container */
   margin-top: 1em;
 }
 
 p {
+  /* Styles for paragraphs */
   font-size: 1em;
   font-weight: 400;
   color: var(--light-gray-text);
@@ -105,6 +119,7 @@ p {
 
 .error,
 .success {
+  /* Styles for error and success messages */
   padding: 0.5em 0;
   border-radius: 0.3em;
   margin-bottom: 1em;
@@ -122,8 +137,8 @@ p {
   color: var(--success-green);
 }
 
-
 @keyframes pop {
+  /* Keyframes for pop-in animation */
   0% {
     transform: scale(0);
   }
