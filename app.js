@@ -17,6 +17,12 @@ const play = () => {
     return;
   }
 
+  if (guessedNumbersArr.includes(userGuess)){
+    hint.classList.add("error");
+    hint.innerHTML = "Você já digitou esse número!";
+    return;
+  }
+
   guessedNumbersArr.push(userGuess);
   noOfGuesses += 1;
   if (userGuess != answer) {
@@ -25,6 +31,8 @@ const play = () => {
     } else {
       hint.innerHTML = "Muito Alto! Chute um número menor.";
     }
+
+  
     noOfGuessesRef.innerHTML = `<span>Número de tentativas: </span>${noOfGuesses}`;
     guessedNumbersRef.innerHTML = `<span>Números chutados: </span>${guessedNumbersArr.join(
       ", "
